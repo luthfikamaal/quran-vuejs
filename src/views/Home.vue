@@ -1,4 +1,5 @@
 <template>
+  <div v-show="surahs.length == 0" id="load" class="h-screen flex items-center bg-indigo-600 justify-center text-white">Loading...</div>
   <div class="flex justify-center">
     <div class="w-full md:w-3/4">
       <div class="grid gap-y-3">
