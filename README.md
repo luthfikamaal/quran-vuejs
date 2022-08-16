@@ -11,8 +11,6 @@ npm install
 npm run dev
 ```
 
-Because it uses TailwindCSS, you should also run this command `npm run tailwind`.
-
 ## Tool
 
 |               |             |
