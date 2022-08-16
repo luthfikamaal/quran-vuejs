@@ -6,7 +6,7 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <div class="max-w-lg overflow-hidden m-auto">
+  <div class="overflow-hidden m-auto">
     <Navbar />
     <div class="pt-16 pb-3 px-3">
       <router-view></router-view>
