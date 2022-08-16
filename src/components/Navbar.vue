@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-indigo-600 items-center text-white fixed p-3 w-lg">
+  <div class="flex bg-indigo-600 items-center text-white fixed w-full p-3">
     <div>
       <router-link :to="{ name: 'home' }">
         <i class="text-2xl bi bi-arrow-left" v-if="$route.path != '/'"></i>
