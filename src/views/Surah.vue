@@ -3,7 +3,7 @@
   <div class="justify-center">
     <div class="w-full" id="card">
       <div class="grid">
-        <div class="card p-4 mb-3 text-right" v-for="(ayah, index) in surah.ayahs" :key="index">
+        <div class="card px-4 pb-4 mb-3 text-right" v-for="(ayah, index) in surah.ayahs" :key="index">
           <div class="card-body">
             <div class="mb-3 text-left text-2xl">{{ ayah.nomor }}</div>
             <div class="text-arab-ayah text-2xl leading-arab-ayah">{{ ayah.text }}</div>
