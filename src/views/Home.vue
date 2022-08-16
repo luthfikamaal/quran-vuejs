@@ -1,13 +1,14 @@
 <template>
-  <div v-show="surahs.length == 0" id="load" class="h-screen flex items-center bg-indigo-600 justify-center text-white">Loading...</div>
-  <div class="flex justify-center">
-    <div class="w-full md:w-3/4">
-      <div class="grid gap-y-3">
-        <div class="w-full rounded-md overflow-hidden shadow-md bg-indigo-600 p-3" v-for="(surah, index) in surahs" :key="index">
-          <h2 class="text-3xl text-arab-title text-center">
-            <router-link :to="{ name: 'surah', params: { surah: surah.nomor } }">{{ surah.nama }}</router-link>
-          </h2>
-        </div>
+  <div v-show="surahs.length == 0" id="load" class="h-screen flex items-center justify-center">Loading...</div>
+  <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+    <div class="card" v-for="(surah, index) in surahs" :key="index">
+      <div class="card-body">
+        <h2 class="text-3xl text-arab-title text-center">
+          <router-link :to="{ name: 'surah', params: { surah: surah.number } }">
+            {{ surah.name }}
+            <div class="pt-3 text-2xl font-ss">{{ surah.englishName }}</div>
+          </router-link>
+        </h2>
       </div>
     </div>
   </div>
@@ -20,10 +21,12 @@ export default {
   setup() {
     let surahs = ref([]);
     onMounted(() => {
+      window.scrollTo(0, 0);
       axios
-        .get('https://equran.id/api/surat/')
+        .get('https://api.alquran.cloud/v1/surah')
         .then((result) => {
-          surahs.value = result.data;
+          surahs.value = result.data.data;
+          document.getElementById('titleNav').innerHTML = 'Quran';
         })
         .catch((err) => {
           console.log(err.message);

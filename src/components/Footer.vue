@@ -1,12 +1,8 @@
 <template>
-  <div class="lg:flex md:block grid gap-x-6 justify-center mt-3">
-    <div class="w-full lg:w-3/4">
-      <div class="grid gap-3">
-        <div class="w-full rounded-md overflow-hidden shadow-md bg-indigo-600">
-          <div class="bg-indigo-600 text-white p-3 rounded-md">Built with VueJS, TailwindCSS.</div>
-        </div>
-      </div>
-    </div>
+  <div class="fixed inset-x-0 bottom-0 m-auto bg-black p-3 w-lg">
+    <button class="btn bg-indigo-500 text-white ml-auto mr-3">
+      <i class="bi bi-play-fill" @click="play(surah.number)" id="btn-play"></i>
+    </button>
   </div>
 </template>
 

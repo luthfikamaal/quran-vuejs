@@ -28,3 +28,9 @@
   background-color: #eaeaea;
   border-radius: 5px;
 }
+.font-ss {
+  font-family: sans-serif;
+}
+.w-lg {
+  width: 512px;
+}

@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .card {
+    @apply rounded-md border border-solid border-slate-600;
+  }
+  .card-img {
+    @apply w-full rounded-t-md;
+  }
+  .card-body {
+    @apply pb-4 pt-5;
+  }
+  .card-text-title {
+    @apply text-2xl font-semibold;
+  }
+  .card-footer {
+    @apply p-3 bg-slate-100 border-t border-solid border-slate-300;
+  }
+  .btn {
+    @apply py-2 px-3 rounded-md;
+  }
+}

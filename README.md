@@ -1,29 +1,30 @@
-# quran-vuejs
+# Quran - Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+## Installation
 
-## Recommended IDE Setup
+Run this commands
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+git clone https://github.com/luthfikamaal/quran-vuejs.git
+cd quran-vuejs
+npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+Because it uses TailwindCSS, you should also run this command `npm run tailwind`.
 
-```sh
-npm run build
-```
+## Tool
+
+|               |             |
+| ------------- | ----------- |
+| JS Framework  | Vue 3       |
+| CSS Framework | TailwindCSS |
+
+## Data Source
+
+- Quran API : [https://api.alquran.cloud/v1/surah/1](https://api.alquran.cloud/v1/surah/1)
+- Murrotal : [https://api.quran.com/api/v4/](https://api.quran.com/api/v4/)
+
+## Font
+
+- [Amiri](https://www.fontsc.com/font/amiri)
