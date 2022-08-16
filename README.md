@@ -26,3 +26,6 @@ npm run dev
 ## Font
 
 - [Amiri](https://www.fontsc.com/font/amiri)
+
+## Live Demo
+[Click here](https://quranonline.vercel.app/)
