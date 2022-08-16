@@ -5,7 +5,7 @@
       <div class="grid">
         <div class="card pb-4 mb-3 text-right" v-for="(ayah, index) in surah.ayahs" :key="index">
           <div class="card-body px-4">
-            <div class="mb-3 text-left text-2xl">{{ ayah.number }}</div>
+            <div class="mb-3 text-left text-2xl">{{ ayah.numberInSurah }}</div>
             <div class="text-arab-ayah text-2xl leading-arab-ayah">{{ ayah.text }}</div>
           </div>
         </div>
@@ -45,15 +45,6 @@ export default {
         this.mute = true;
         btn.classList.remove('bi-pause-fill');
         btn.classList.add('bi-play-fill');
-      }
-      console.log(this.mute);
-    },
-    greet(event) {
-      // `this` inside methods points to the current active instance
-      alert(`Hello ${this.name}!`);
-      // `event` is the native DOM event
-      if (event) {
-        alert(event.target.tagName);
       }
     },
   },
